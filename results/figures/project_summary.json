@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "title": "Parkinson's Disease Detection from Gait Data",
+    "date_completed": "2025-11-18",
+    "dataset_size": 306,
+    "total_features": 38,
+    "subjects": 165
+  },
+  "feature_engineering": {
+    "total_features": 38,
+    "batch_1_temporal": 10,
+    "batch_2_force": 10,
+    "batch_3_asymmetry_stats": 10,
+    "batch_4_frequency": 8
+  },
+  "model_results": {
+    "logistic_regression": {
+      "test_accuracy": "86.96%",
+      "precision": "93.33%",
+      "recall": "87.50%",
+      "f1_score": "90.32%",
+      "auc_roc": "0.8862"
+    },
+    "random_forest": {
+      "test_accuracy": "84.78%",
+      "precision": "82.05%",
+      "recall": "100.00%",
+      "f1_score": "90.14%",
+      "auc_roc": "0.9241"
+    }
+  },
+  "best_model": "Logistic Regression",
+  "key_insights": [
+    "Logistic Regression achieved highest accuracy (86.96%)",
+    "Random Forest optimized for 100% recall for clinical screening",
+    "38 engineered features from temporal, force, asymmetry, and frequency domains",
+    "Stride time variability and double support time were top predictive features"
+  ]
+}

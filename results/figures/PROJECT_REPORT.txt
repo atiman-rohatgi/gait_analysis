@@ -1,0 +1,63 @@
+======================================================================
+PARKINSON'S DISEASE DETECTION FROM GAIT DATA
+Machine Learning Project Report
+======================================================================
+
+Date Completed: 2025-11-18
+
+PROJECT OVERVIEW
+----------------------------------------------------------------------
+Dataset: PhysioNet Gait in Parkinson's Disease
+Total Samples: 306 walking trials
+Subjects: 165 (72 Control, 93 Parkinson's)
+Features Engineered: 38
+
+FEATURE ENGINEERING
+----------------------------------------------------------------------
+Extracted 38 features across 4 domains:
+  • Batch 1 - Temporal Features (10): Stride time, cadence, variability
+  • Batch 2 - Force Features (10): Peak force, distribution, impulse
+  • Batch 3 - Asymmetry/Stats (10): Left-right differences, signal stats
+  • Batch 4 - Frequency Domain (8): FFT analysis, spectral features
+
+MODEL PERFORMANCE
+----------------------------------------------------------------------
+
+LOGISTIC REGRESSION (Best Overall)
+  Test Accuracy:  86.96%
+  Precision:      93.33%
+  Recall:         87.50%
+  F1-Score:       90.32%
+  AUC-ROC:        0.8862
+
+RANDOM FOREST (Optimized for Recall)
+  Test Accuracy:  84.78%
+  Precision:      82.05%
+  Recall:         100.00%
+  F1-Score:       90.14%
+  AUC-ROC:        0.9241
+
+KEY FINDINGS
+----------------------------------------------------------------------
+• Logistic Regression achieved best accuracy (86.96%)
+• Simple linear model outperformed complex models on this dataset
+• Random Forest achieved 100% recall - ideal for clinical screening
+• Top predictive features: stride time CV, double support time
+• Demonstrated trade-off between precision and recall for medical AI
+
+FILES GENERATED
+----------------------------------------------------------------------
+Models:
+  • logistic_regression_model.pkl
+  • random_forest_model.pkl
+  • scaler.pkl
+
+Visualizations:
+  • model_comparison.png
+  • confusion_matrices.png
+  • roc_curves.png
+  • feature_importance.png
+
+======================================================================
+END OF REPORT
+======================================================================
