@@ -1,0 +1,60 @@
+============================================================
+FEATURE EXTRACTION SUMMARY
+============================================================
+
+Total samples (walks): 306
+Total subjects: 165
+Total features: 38
+
+Feature Batches:
+  Batch 1 (Temporal):              10 features
+  Batch 2 (Force/Spatial):         10 features
+  Batch 3 (Asymmetry/Statistical): 10 features
+  Batch 4 (Frequency-Domain):       8 features
+
+Class Distribution:
+  Parkinsons: 214
+  Control: 92
+
+============================================================
+FEATURE LIST
+============================================================
+
+ 1. stride_time_left_mean
+ 2. stride_time_right_mean
+ 3. step_time_mean
+ 4. cadence
+ 5. stance_time_ratio
+ 6. swing_time_ratio
+ 7. stride_time_cv_left
+ 8. stride_time_cv_right
+ 9. step_time_cv
+10. double_support_time
+11. peak_force_left
+12. peak_force_right
+13. mean_force_left
+14. mean_force_right
+15. heel_force_ratio
+16. toe_force_ratio
+17. midfoot_force_ratio
+18. force_range_left
+19. force_range_right
+20. total_force_impulse
+21. force_asymmetry_index
+22. temporal_asymmetry_index
+23. peak_force_asymmetry
+24. stance_time_asymmetry
+25. force_std_left
+26. force_std_right
+27. force_rms_left
+28. force_rms_right
+29. force_skewness
+30. force_kurtosis
+31. dominant_frequency
+32. spectral_power
+33. spectral_entropy
+34. power_gait_band
+35. frequency_cv
+36. harmonic_ratio
+37. spectral_centroid
+38. spectral_bandwidth
